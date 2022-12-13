@@ -9,14 +9,136 @@
 body {
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: #fff;
+}
+
+main.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+main.container .nft-card {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 400px;
+    border-radius: 18px;
+
+}
+
+main.container .nft-card .image-container {
+    width: 100%;
+    padding: 30px;
+}
+
+main.container .nft-card .image-container .main-image {
+    background-image: url('./images/image-equilibrium.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center center;
+    min-height: 370px;
+    background-size: cover;
+    border-radius: 18px;
+    
+}
+
+.page-title {
+    padding: 0 30px 10px;
+}
+
+.page-title h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.page-title p {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.ethereum-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+
+.e-stats {
+    display: flex;
+    align-items: center;
+}
+
+.e-stat-img {
+    background-image: url(./images/icon-ethereum.svg);
+    min-width: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+}
+
+.e-stat p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.days-left-stats {
+    display: flex;
+    align-items: center;
+}
+
+.days-left-img {
+    background-image: url(./images/icon-clock.svg);
+    min-width: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+}
+
+.days-left p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
 }
 
 
-
-
-.attribution { 
-    font-size: 11px; text-align: center; 
+.hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid hsl(228, 45%, 44%);
+    opacity: .7;
 }
-.attribution a {
+
+.creator-container {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.creator-container img {
+    width: 40px;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    border-radius: 36px;
+}
+
+.creator-container p {
+    color: hsl(215, 51%, 70%);
+}
+
+.creator-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+footer.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin: 10px 0;
+}
+footer.attribution a {
     color: hsl(228, 45%, 44%); 
 }
